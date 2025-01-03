@@ -1,0 +1,108 @@
+body {
+    background: linear-gradient(to bottom, #ffe6e6, #fff);
+    font-family: 'Georgia', serif;
+    color: #4d4d4d;
+}
+
+.navbar {
+    background-color: #ff4d6d;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.header {
+    text-align: center;
+    margin: 30px 15px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #ff4d6d;
+}
+
+.header p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.gallery {
+    margin-top: 20px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.video-section {
+    margin-top: 30px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.video-section h2 {
+    font-size: 1.8rem;
+    color: #ff4d6d;
+    margin-bottom: 15px;
+}
+
+.video-section video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    margin-top: 30px;
+    background-color: #ff4d6d;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.heart-divider {
+    margin: 20px auto;
+    width: 40px;
+    height: 40px;
+    background: url('https://cdn-icons-png.flaticon.com/512/833/833472.png') center/contain no-repeat;
+}
+
+@media (min-width: 768px) {
+    .header h1 {
+        font-size: 3rem;
+    }
+
+    .header p {
+        font-size: 1.2rem;
+    }
+
+    .gallery img {
+        width: auto;
+        height: 300px;
+    }
+}
